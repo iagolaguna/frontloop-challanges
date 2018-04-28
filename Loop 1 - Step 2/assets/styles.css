@@ -1,0 +1,121 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family: Roboto , Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-image: url("img/background.jpg")
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    background-color: #FFFFFF;
+    width: 320px;
+    border-radius: 5px;
+}
+.items-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.header{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #343436;
+    text-align: center;
+    padding: 15px;
+}
+
+.item{
+  display: flex;
+  border-top: 0.02px solid #e6e6e6;
+  align-items: center;
+  justify-content: stretch;
+  width: 100%;
+  transition: background-color .4s;
+}
+.item:hover{
+    background-color: #e6e6e6;
+}
+.item > span {
+    padding: 10px;
+    display: flex;
+    flex-grow: 1;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #adabaa;
+}
+
+.img-container{
+    padding: 5px;
+    max-width: 36px;
+    max-height: 36px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.check{
+    padding: 5px;
+}
+
+.btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-top: 1.1px solid #598bdd;
+    border-bottom: 1.1px solid #598bdd;
+    padding: 10px;
+    background-color: #598bdd;
+    color:#FFFFFF;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 0px 0px 5px 5px;
+    transition: background-color .5s;
+}
+
+.btn-primary > span {
+    text-align: center;
+    padding: 4px;
+}
+
+.btn-primary:active{
+    border-top: 1.1px solid #FFFFFF;
+}
+.btn-primary:hover{
+    background-color: #478af7
+}
+
+.steps{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+.step{
+    color: #adabaa;
+    font-size: 2rem;
+}
+
+.step.active{
+    color: #343436;
+}
