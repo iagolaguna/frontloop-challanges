@@ -33,9 +33,11 @@ body{
     font-weight: bold;
     color: #343436;
     text-align: center;
-    padding: 15px;
+    
 }
-
+.header > .title {
+    margin: 10px;
+}
 .item{
   display: flex;
   border-top: 0.02px solid #e6e6e6;
@@ -72,7 +74,14 @@ img {
 }
 
 .check{
-    padding: 5px;
+    padding: 15px;
+    visibility: hidden;
+}
+.item.active > span {
+    color: #343436;
+}
+.item.active > .check {
+    visibility: visible;
 }
 
 .btn-primary {
@@ -112,10 +121,12 @@ img {
 }
 
 .step{
-    color: #adabaa;
-    font-size: 2rem;
+    color: #dedede;
+    font-size: 1rem;
+    padding:15px 1.5px 0px 1.5px;
+
 }
 
 .step.active{
-    color: #343436;
+    color: #aaaaaa;
 }
