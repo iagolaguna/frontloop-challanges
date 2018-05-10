@@ -23,7 +23,13 @@ body {
     align-content: center;
     padding: 40px;
 }
-
+.bicycle{
+    background-image: url(img/bicycle.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 85%;
+    background-position-y: 200px;
+}
 .content{
     display: flex;
     flex-direction: column;
@@ -34,8 +40,11 @@ body {
     color:#ababaa;
     font-size: .90rem;
     font-weight: 450;
+    padding: 25px 0px 25px 0px;
 }
-
+.uppercase{
+    text-transform: uppercase;
+}
 ul{
     list-style: none;
 }
@@ -43,7 +52,7 @@ ul{
 ul > li > div {
     display: flex;
     justify-content: space-between;
-    padding: 15px 0px 15px 0px;
+    padding: 20px 0px 20px 0px;
 }
 
 ul > li > div > span.price{
@@ -53,3 +62,28 @@ ul > li > div > span.price{
 ul > li > div > span.description{
     color: #5b5b5b;
 }
+
+header{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+header > h2{
+    display:flex;
+    align-self: center;
+}
+
+header > img {
+    min-width: 36px;
+    min-height: 36px;
+    border-radius: 50%;
+    border: 1.5px solid #e7e7e7;
+    transition: .3s box-shadow;
+}
+
+header > img:hover {
+    box-shadow: 0.5px 0.5px 15px 0.5px  #9E9E9E;
+}
+
