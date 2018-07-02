@@ -1,0 +1,25 @@
+{
+  "name": "frontloop-challanges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "l1s1":"lite-server --baseDir=\"./loop1/step1/assets\"",
+    "l1s2":"lite-server --baseDir=\"./loop1/step2/assets\"",
+    "l1s3":"lite-server --baseDir=\"./loop1/step3/assets\"",
+    "l1s4":"lite-server --baseDir=\"./loop1/step4/assets\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iagolaguna/frontloop-challanges.git"
+  },
+  "author": "Iago L. Laguna <iagolaguna.83@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iagolaguna/frontloop-challanges/issues"
+  },
+  "homepage": "https://github.com/iagolaguna/frontloop-challanges#readme",
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
+}
