@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,46 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
   <div class="container">
     <div class="status-bar">
       <span class="status"></span>
       Mark Zuckerberg
       <div class="close">
-          <img  src="img/close.svg"/>
+        <img src="img/close.svg" />
       </div>
-      
+    </div>
+      <ul class="conversation">
+        <li data-message-type="out">
+          <div class="time">10:53</div>
+          <div class="message" >
+            Hi, Mark! I made a new design for Messenger App.
+          </div>
+        </li>
+        <li data-message-type="inc">
+          <div class="time">10:57</div>
+          <div class="message">
+            Yo! Send it to my assistant and we'll review it during the year.
+          </div>
+        </li>
+        <li data-message-type="out">
+          <div class="time">11:03</div>
+          <div class="message">
+            But Mark...
+          </div>
+        </li>
+        <li data-message-type="info">
+          <div class="message">
+            You were blocked by the user.
+          </div>
+        </li>
+      </ul>
+    <div class="footer">
+      <input type="text" placeholder="Enter your message"/>
+      <input type="button" value="SEND"/>
     </div>
   </div>
 </body>
+
 </html>
