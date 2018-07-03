@@ -92,14 +92,28 @@ ul.conversation {
     list-style: none;
 }
 
-.conversation > li[data-message-type="inc"] > div.message{
-    background-color: blue;
+.message{
+    font-size: 0.85rem;
+    max-width: 70%;
 }
-
+.conversation > li{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+/*
+olhar sobre align-items
+*/
 .conversation > li[data-message-type="out"] > div.message{
     background-color: gray;
 }
 
-.conversation > li[data-message-type="info"] > div.message{
+.conversation > li[data-message-type="inc"] > div.message{
+    display: flex;
+    background-color: blue;
+
+}
+
+.conversation > li[data-message-type="system"] > div.message{
     background-color: red;
 }
